@@ -43,7 +43,9 @@ def CompressString(s):
     # O(n)
     while j < len(s):
         if s[i] != s[j]:
-            ans.append(s[i]) #< O(1) amoritzed  - list will double in size when capacity is reached
+            # O(1) amortized - list will double in size when capacity is reached
+            # but appending operation is O(1) on average
+            ans.append(s[i])
             ans.append(str(j - i))
             i = j
         j += 1
