@@ -1,0 +1,40 @@
+** Implement an algorithm to find the kth to last element of a singly linked list **
+
+Example:
+1 -> 2 -> 3 -> 4 -> 5 -> 6
+KthElement(LinkedList, 3) = Node 3
+
+Brute-force
+1. fast and slow pointer, where fast pointer is k elements ahead
+2. iterate until fast.next == NULL
+3. return slow
+- edge cases : LinkedList smaller than k element or empty linked list
+Time : O(n), Space : O(1)
+
+def KthElement(linkedList, k):
+    # edge case : empty linked list
+    if linkedList is None or linkedList.head is None:
+        return None
+
+    # two-pointer algorithm
+    slow, fast = None, linkedList.head
+    # iterate fast pointer without the slow pointer moving
+    # until the faster pointer is k elements ahead
+    count = 1
+
+    # boundaries for fast pointer
+    while fast and fast.next:
+        # initialize slow pointer to head when fast pointer is k-elements ahead
+        if count == k :
+            slow = linkedList.head
+        elif count > k:
+            slow = slow.next
+        count += 1
+        fast = fast.next
+
+
+    return slow #< edge case : would return None if there are not at least k elements
+
+# Other methods
+1. If the linkedList size is passed in, then could return Node at n - k - 1
+2. Recursively : Find Node(n-1), then recurse back k times
