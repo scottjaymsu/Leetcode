@@ -1,0 +1,59 @@
+2.3: Implement an algorithm to delete a node in the middle (i.e. any node but the first and last node,
+not necessarily the exact middle) of a singly linked list, given only access to that node.
+
+Example:
+Input: the node c from the linked list  a ->b -> c -> d -> e -> f
+Result: nothing is returned, but the new linked list looks like a -> b -> d -> e -> f
+
+Brute-force:
+- Shifts nodes (curr node = next node)
+1. Recurse until end of the list
+2. Base case : when curr == None -> return
+3. Set curr = return val
+
+Recursion:
+Time : O(n)
+Space : O(n)
+
+Iterative:
+Time : O(n)
+Space : O(1)
+1. Iterate until end of the list
+    - Set curr as next
+
+Edge case:
+- Empty linked list/NULL input
+
+# middle is node within linked list (not first or last)
+def DeleteMiddleNode(middle):
+    # edge case : empty linked list or NULL input
+    if not middle:
+        return
+
+    # iterate through linked list until after list is reached
+    while middle and middle.next:
+        # set curr val to the next node's value
+        middle.val = middle.next.val
+        # move to the next node
+        middle = middle.next
+
+    # replace final node with the null
+    middle = Node()
+
+    return
+
+Input: the node c from the linked list  a ->b -> c -> d -> e -> f
+Iterations:
+middle = 2, list = a ->b -> d -> d -> e -> f
+middle = 3, list = a ->b -> d -> e -> e -> f
+middle = 4, list = a ->b -> d -> e -> f -> f
+middle = 5, list = a ->b -> d -> e -> f -> f #< loop is broken
+
+#after
+list = a ->b -> d -> e -> f -> ()
+
+
+OVERCOMPLICATED THINGS
+- don't need to shift all nodes, just need to delete current node
+Time: O(1)
+Space: O(1)
