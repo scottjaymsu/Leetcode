@@ -1,0 +1,8 @@
+# ninja log v5
+590	756	7802815619331566	c_practice.exe	7abe700d627afac9
+3	637	7802771604217864	CMakeFiles/c_practice.dir/last-k-lines.cpp.obj	21bb4e2b1c62987
+5	497	7802810337158199	CMakeFiles/c_practice.dir/main.cpp.obj	48e6cfbd939487fd
+1	199	7807971128500066	build.ninja	ba0a71aaaca26e32
+23	588	7802815617696138	CMakeFiles/c_practice.dir/reverse-string.cpp.obj	9c2f8704e04cda4b
+5	142	7807971217882429	CMakeFiles/c_practice.dir/vector-implementation.cpp.obj	2f02716af90f2456
+143	590	7807971222314148	c_practice.exe	40a2dcd683565357
