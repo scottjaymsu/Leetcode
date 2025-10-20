@@ -21,13 +21,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="854fcb19-d155-46d2-a017-cff54ffa67d5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/vector/vector.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-c37e4061c443f3051a4c.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-2a88a1295f477edcd179.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2025-10-19T18-21-03-0151.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-c_practice-Debug-20281fd82bd1017fea13.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_practice.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_practice.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/c_practice.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/c_practice.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/last-k-lines.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/k_lines/last-k-lines.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/last-k-lines.h" beforeDir="false" afterPath="$PROJECT_DIR$/k_lines/last-k-lines.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vector-implementation.h" beforeDir="false" afterPath="$PROJECT_DIR$/vector-implementation.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reverse-string.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/reverse_string/reverse-string.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reverse-string.h" beforeDir="false" afterPath="$PROJECT_DIR$/reverse_string/reverse-string.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/k_lines/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vector-implementation.h" beforeDir="false" afterPath="$PROJECT_DIR$/vector/vector.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +72,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "CMake Application.c_practice.executor": "Debug",
+    "CMake Application.c_practice.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
@@ -74,7 +90,19 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jaysc\OneDrive\Desktop\c-practice\k_lines" />
+      <recent name="C:\Users\jaysc\OneDrive\Desktop\c-practice\reverse_string" />
+      <recent name="C:\Users\jaysc\OneDrive\Desktop\c-practice\vector-implementation" />
+    </key>
+  </component>
   <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="c_practice" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_practice" TARGET_NAME="c_practice" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_practice" RUN_TARGET_NAME="c_practice">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -95,7 +123,7 @@
       <workItem from="1760829086797" duration="9132000" />
       <workItem from="1760898051281" duration="12000" />
       <workItem from="1760928249365" duration="6467000" />
-      <workItem from="1760981811241" duration="1811000" />
+      <workItem from="1760981811241" duration="5921000" />
     </task>
     <servers />
   </component>
@@ -111,14 +139,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>54</line>
-          <option name="timeStamp" value="18" />
+          <url>file://$PROJECT_DIR$/vector/vector.h</url>
+          <line>17</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/vector-implementation.h</url>
-          <line>76</line>
-          <option name="timeStamp" value="19" />
+          <url>file://$PROJECT_DIR$/vector/vector.h</url>
+          <line>45</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

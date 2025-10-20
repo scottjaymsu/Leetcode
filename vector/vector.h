@@ -1,5 +1,5 @@
 /**
- * @file vector-implementation.h
+ * @file vector.h
  * @author jaysc
  *
  *
@@ -27,6 +27,40 @@ private:
 public:
     // Default constructor
     Vector(){};
+
+    // Destructor
+    ~Vector()
+    {
+        for (int i = 0; i < size; ++i)
+        {
+            // deallocate template variables to clean up memory leaks
+            arr[i].~T();
+        }
+        // deallocate array itself
+        free(arr);
+    }
+
+    // Copy constructor
+    Vector(Vector<T> const &other)
+    {
+        capacity = other.capacity;
+        size = other.size;
+
+        if (size <= 0)
+        {
+            arr = nullptr;
+            return;
+        }
+
+        // raw allocation for array
+        arr = (T *) malloc(capacity * sizeof(T));
+        // allocate templated elements from other array
+        for (int i = 0; i < size; ++i)
+        {
+            // new(address) Type(args)
+            new (&arr[i]) T(other.arr[i]);
+        }
+    }
 
     // Add elements to vector
     void push_back(const T& element)
@@ -78,11 +112,7 @@ public:
 
         // deallocate last element and move size back one
         arr[--size].~T();
-        return;
     }
-
-    // copy constructor
-    // destructor
 
     // overloaded operator for testing
     template<typename U>
@@ -103,5 +133,7 @@ ostream& operator<<(ostream& out, Vector<U> const& v)
 
     return out;
 }
+
+void vector_test();
 
 #endif //C_PRACTICE__VECTOR_IMPLEMENTATION_H

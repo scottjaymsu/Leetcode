@@ -151,7 +151,7 @@
 			"path" : "C:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake"
 		},
 		{
-			"path" : "test.txt"
+			"path" : "k_lines/test.txt"
 		}
 	],
 	"kind" : "cmakeFiles",
