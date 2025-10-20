@@ -56,6 +56,9 @@ int main()
     v.push_back(foo_fourth);
     cout << v << endl;
 
+    // testing pop_back
+    v.pop_back();
+    cout << v << endl;
 
     return 0;
 }

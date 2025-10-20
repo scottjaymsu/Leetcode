@@ -27,8 +27,7 @@ private:
 public:
     // Default constructor
     Vector(){};
-    // Assignment constructor
-//    Vector& operator=(const Vector& other);
+
     // Add elements to vector
     void push_back(const T& element)
     {
@@ -71,8 +70,17 @@ public:
        size++;
     }
 
-    // pop_back
-    // resize
+    // remove last element in array
+    void pop_back()
+    {
+        // edge case : empty vector
+        if (!size) return;
+
+        // deallocate last element and move size back one
+        arr[--size].~T();
+        return;
+    }
+
     // copy constructor
     // destructor
 
@@ -84,10 +92,14 @@ public:
 template<typename U>
 ostream& operator<<(ostream& out, Vector<U> const& v)
 {
+    out << "[ ";
+
     for (int i = 0; i < v.size; ++i)
     {
         out << v.arr[i] << " ";
     }
+
+    out << "]";
 
     return out;
 }
