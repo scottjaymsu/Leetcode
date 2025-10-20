@@ -9,6 +9,7 @@
 #define C_PRACTICE__VECTOR_IMPLEMENTATION_H
 
 #include <cstdlib>
+#include <iostream>
 
 using namespace std;
 
@@ -38,17 +39,57 @@ public:
            arr = (T *) malloc(capacity * sizeof(T));
        }
 
-       //
+       // full vector -> reallocation via array doubling
+       if (size >= capacity)
+       {
+           capacity *= 2;
+           T *temp = (T *) malloc(capacity * sizeof(T));
 
-        // construct new element at arr[size] using placement new
-        // placement new only constructs not allocate
-        // new(address) Type(args)
-        new(&arr[size]) T(element);
-        size++;
+           // copy old array
+           for (int i = 0; i < size; ++i)
+           {
+               // placement new
+               new (&temp[i]) T(arr[i]);
+           }
+
+           // free old array
+           for (int i = 0; i < size; ++i)
+           {
+               // deallocate each template object
+               // in case object manages its own memory
+               // avoids memory leaks for internal buffers when array is freed
+               arr[i].~T();
+           }
+           free(arr);
+           arr = temp;
+       }
+
+       // construct new element at arr[size] using placement new
+       // placement new only constructs not allocate
+       // new(address) Type(args)
+       new(&arr[size]) T(element);
+       size++;
     }
 
-    // Remove elements from vector
-//    T pop();
+    // pop_back
+    // resize
+    // copy constructor
+    // destructor
+
+    // overloaded operator for testing
+    template<typename U>
+    friend ostream& operator<<(ostream& out, Vector<U> const& v);
 };
+
+template<typename U>
+ostream& operator<<(ostream& out, Vector<U> const& v)
+{
+    for (int i = 0; i < v.size; ++i)
+    {
+        out << v.arr[i] << " ";
+    }
+
+    return out;
+}
 
 #endif //C_PRACTICE__VECTOR_IMPLEMENTATION_H
