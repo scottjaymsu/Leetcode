@@ -10,7 +10,7 @@ add_executable(c_practice
         reverse-string.cpp
         reverse-string.h
         vector-implementation.h
-        vector-implementation.cpp)
+)
 
 # Copy test.txt into the build directory so the program can find it
 configure_file(${CMAKE_SOURCE_DIR}/test.txt

@@ -67,12 +67,6 @@ build CMakeFiles/c_practice.dir/reverse-string.cpp.obj: CXX_COMPILER__c_practice
   OBJECT_DIR = CMakeFiles\c_practice.dir
   OBJECT_FILE_DIR = CMakeFiles\c_practice.dir
 
-build CMakeFiles/c_practice.dir/vector-implementation.cpp.obj: CXX_COMPILER__c_practice_unscanned_Debug C$:/Users/jaysc/OneDrive/Desktop/c-practice/vector-implementation.cpp || cmake_object_order_depends_target_c_practice
-  DEP_FILE = CMakeFiles\c_practice.dir\vector-implementation.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\c_practice.dir
-  OBJECT_FILE_DIR = CMakeFiles\c_practice.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target c_practice
@@ -81,7 +75,7 @@ build CMakeFiles/c_practice.dir/vector-implementation.cpp.obj: CXX_COMPILER__c_p
 #############################################
 # Link the executable c_practice.exe
 
-build c_practice.exe: CXX_EXECUTABLE_LINKER__c_practice_Debug CMakeFiles/c_practice.dir/last-k-lines.cpp.obj CMakeFiles/c_practice.dir/main.cpp.obj CMakeFiles/c_practice.dir/reverse-string.cpp.obj CMakeFiles/c_practice.dir/vector-implementation.cpp.obj
+build c_practice.exe: CXX_EXECUTABLE_LINKER__c_practice_Debug CMakeFiles/c_practice.dir/last-k-lines.cpp.obj CMakeFiles/c_practice.dir/main.cpp.obj CMakeFiles/c_practice.dir/reverse-string.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\c_practice.dir
