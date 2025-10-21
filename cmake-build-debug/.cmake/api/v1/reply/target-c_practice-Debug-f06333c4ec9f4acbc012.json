@@ -107,7 +107,8 @@
 				2,
 				4,
 				5,
-				7
+				7,
+				9
 			]
 		}
 	],
@@ -162,6 +163,11 @@
 			"compileGroupIndex" : 0,
 			"path" : "linked_list/linkedlist.cpp",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "foo/foo.h",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"

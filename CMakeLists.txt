@@ -13,6 +13,7 @@ add_executable(c_practice
         main.cpp
         linked_list/linkedlist.h
         linked_list/linkedlist.cpp
+        foo/foo.h
 )
 
 # Copy test.txt into the build directory so the program can find it

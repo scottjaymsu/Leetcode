@@ -1,25 +1,10 @@
 #include "vector.h"
+#include "../foo/foo.h"
 
 #include <iostream>
 #include <string>
 
 using namespace std;
-
-struct Foo {
-    string name;
-
-    // default constructor
-    Foo() : name("") { };
-    // parameterized constructor
-    Foo(string input) : name(std::move(input)) { };
-};
-
-// overloaded ostream operator for cout Foo output
-ostream& operator<<(ostream &out, const Foo &foo)
-{
-    out << foo.name;
-    return out;
-}
 
 void vector_test()
 {

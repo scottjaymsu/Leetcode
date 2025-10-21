@@ -3,21 +3,39 @@
  * @author jaysc
  */
 
+#pragma once
+
 #include "linkedlist.h"
+#include "../foo/foo.h"
 #include <iostream>
 using namespace std;
 
-ostream& operator<<(ostream& out, Node const& node)
+template <typename T>
+ostream& operator<<(ostream& out, Node<T> const& node)
 {
     out << node.data;
     return out;
 }
 
+template <typename T>
+LinkedList<T>::~LinkedList()
+{
+    Node<T> *current = head;
+    // free all nodes
+    while (current != nullptr)
+    {
+        Node<T> *next = current->next;
+        delete current;
+        current = next;
+    }
+}
+
 // print linked list
-void LinkedList::print()
+template <typename T>
+void LinkedList<T>::print()
 {
     // init at head
-    Node *temp = head;
+    Node<T> *temp = head;
     cout << "linked list = ";
     while (temp != nullptr)
     {
@@ -28,9 +46,10 @@ void LinkedList::print()
 }
 
 // insert node at head of linked list
-void LinkedList::insert_head(int data)
+template <typename T>
+void LinkedList<T>::insert_head(T data)
 {
-    Node *node = new Node(data);
+    Node<T> *node = new Node<T>(data);
     // edge case : empty linked list
     if (head == nullptr)
     {
@@ -43,7 +62,8 @@ void LinkedList::insert_head(int data)
 }
 
 // remove node at head
-void LinkedList::remove_head()
+template <typename T>
+void LinkedList<T>::remove_head()
 {
     // edge case : empty list
     if (head == nullptr)
@@ -51,7 +71,7 @@ void LinkedList::remove_head()
         cout << "No nodes to remove!" << endl;
         return;
     }
-    Node *temp = head;
+    Node<T> *temp = head;
     head = head->next;
     delete temp;
 }
@@ -59,11 +79,11 @@ void LinkedList::remove_head()
 void linked_test()
 {
     // test node constructor
-    Node one(1);
+    Node<int> one(1);
     cout << one << endl;
 
     // init linked list
-    LinkedList list = LinkedList();
+    LinkedList<int> list = LinkedList<int>();
 
     // insert into empty linked list
     list.insert_head(2);
@@ -79,4 +99,20 @@ void linked_test()
     list.print();
     // remove head on empty linked list
     list.remove_head();
+
+    // testing with complex type <Foo>
+    Foo foo(string("jay"));
+    LinkedList<Foo> list_two = LinkedList<Foo>();
+    list_two.insert_head(foo);
+    list_two.print();
+    list_two.remove_head();
+    list_two.print();
+
+    // testing destructor
+    {
+        Foo foo_two(string("jeff"));
+        LinkedList<Foo> list_three = LinkedList<Foo>();
+        list_three.insert_head(foo_two);
+    }
+
 }

@@ -16,29 +16,35 @@
 #include <iostream>
 using namespace std;
 
+template <typename T>
 struct Node {
-    int data = NULL;
+    T data;
     Node *next = nullptr;
 
     // default constructor
     Node(){ }
     // constructor with data input
-    Node(int input) : data(input) {}
+    Node(T input) : data(input) {}
     // overloaded ostream operator
     ostream& operator<<(ostream& out);
 };
 
+template <typename T>
 class LinkedList {
 private:
-    Node *head = nullptr;
+    Node<T> *head = nullptr;
 
 public:
     // default constructor
     LinkedList() {}
+    // destructor
+    ~LinkedList();
+
+
     // print linked list
     void print();
     // insert at head
-    void insert_head(int data);
+    void insert_head(T data);
     // remove node at head
     void remove_head();
 };
