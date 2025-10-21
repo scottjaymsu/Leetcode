@@ -21,13 +21,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="854fcb19-d155-46d2-a017-cff54ffa67d5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/vector/vector.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linked_list/linkedlist.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linked_list/linkedlist.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-c37e4061c443f3051a4c.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-2a88a1295f477edcd179.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2025-10-19T18-21-03-0151.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-c_practice-Debug-20281fd82bd1017fea13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-fd4fbde0040c704aee99.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-bef076b3095ee9943c24.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2025-10-20T19-27-42-0623.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-c_practice-Debug-905ca35a542e3263d4ac.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
@@ -37,13 +38,7 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/c_practice.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/c_practice.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/last-k-lines.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/k_lines/last-k-lines.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/last-k-lines.h" beforeDir="false" afterPath="$PROJECT_DIR$/k_lines/last-k-lines.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reverse-string.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/reverse_string/reverse-string.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reverse-string.h" beforeDir="false" afterPath="$PROJECT_DIR$/reverse_string/reverse-string.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/k_lines/test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vector-implementation.h" beforeDir="false" afterPath="$PROJECT_DIR$/vector/vector.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +67,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "CMake Application.c_practice.executor": "Run",
+    "CMake Application.c_practice.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
@@ -123,7 +118,7 @@
       <workItem from="1760829086797" duration="9132000" />
       <workItem from="1760898051281" duration="12000" />
       <workItem from="1760928249365" duration="6467000" />
-      <workItem from="1760981811241" duration="5921000" />
+      <workItem from="1760981811241" duration="15285000" />
     </task>
     <servers />
   </component>
@@ -147,6 +142,11 @@
           <url>file://$PROJECT_DIR$/vector/vector.h</url>
           <line>45</line>
           <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/linked_list/linkedlist.cpp</url>
+          <line>48</line>
+          <option name="timeStamp" value="38" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

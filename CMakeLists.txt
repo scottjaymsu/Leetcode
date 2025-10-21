@@ -11,6 +11,8 @@ add_executable(c_practice
         reverse_string/reverse-string.h
         vector/vector.h
         main.cpp
+        linked_list/linkedlist.h
+        linked_list/linkedlist.cpp
 )
 
 # Copy test.txt into the build directory so the program can find it
